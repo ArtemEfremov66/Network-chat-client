@@ -9,10 +9,13 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        String name = "Arti Squirrel";
+        String name;
         Scanner scanner = new Scanner(System.in);
         String host = "127.0.0.1";
         int port = 8089;
+
+        System.out.println("Enter your name");
+        name = scanner.nextLine();
 
         try(Socket clientSocket = new Socket(host, port);
             PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true);
