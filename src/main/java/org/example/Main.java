@@ -11,7 +11,7 @@ public class Main {
     public static void main(String[] args) {
         String name;
         Scanner scanner = new Scanner(System.in);
-        String host = "127.0.0.1";
+        String host = "192.168.1.3";
         int port = 8089;
 
         System.out.println("Enter your name");
